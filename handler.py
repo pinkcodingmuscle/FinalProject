@@ -1,4 +1,5 @@
 from message_class import Message
+from encryption import encode_message
 
 def save_message(message, filename)->list:
     """This function will open file for appending. The handler
@@ -22,5 +23,5 @@ def handler_prompts(filename)-> None:
     agent_password = input("Enter agent password: ")
     agent_message = input("Enter new message: ")
 
-    message = Message(agent_username, agent_password, agent_message)
+    message = Message(agent_username, agent_password, encode_message(agent_message))
     save_message(message, filename)

@@ -1,4 +1,5 @@
 from message_class import Message
+from encryption import decode_message
 
 def load_agent_messages(filename)->list:
     """This function will read from a specified file and load 
@@ -15,7 +16,7 @@ def load_agent_messages(filename)->list:
                 agent = line.strip().split(":")[0].split("=")[1] 
                 password = line.strip().split(":")[1].split("=")[1]
                 message = line.strip().split(":")[2].split("=")[1]
-                messagelist.append(Message(agent, password, message))
+                messagelist.append(Message(agent, password, decode_message(message)))
             return messagelist
     except FileNotFoundError:
         print("File not found!")

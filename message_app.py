@@ -1,13 +1,21 @@
-"""This will be the main function for the program."""
+"""
+
+Final Project   
+=======================
+Course:   CS 5001
+
+This will be the main function for the program.
+"""
+
+
 from secretagent import showAgentMessages, load_agent_messages
 from handler import handler_prompts
+# import argparse
+# import sys
 
 WELCOME_PROMPT = """WELCOME TO THE SECRET AGENT MESSAGE PORTAL!"""
 END_PROMPT = """Thank for using the secret agent message portal! Goodbye!"""
-VERIFY_USER = """Are you an agent? Y or N: """
-A_USERNAME = """Enter your username: """
-A_PASSWORD = """Enter your password: """
-INVALID_INPUT = "Invalid username and(or) password. Please try again"
+VERIFY_USER = """Are you an agent? Enter Y, N or Q to quit: """
 
 
 def main():

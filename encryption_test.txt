@@ -1,0 +1,36 @@
+essie@MacBook-Air-3 FinalProject % /usr/local/bin/python3 "/Users/es
+sie/Desktop/Northeastern Align Online/CS5001/Assignments/HW Assignme
+nt 7/FinalProject/encryption.py"
+Trying:
+    decode_message("s8 M0Qb0'g w1wHg 0b QfqbG Nf1w!")
+Expecting:
+    "13 Santa's elevs at north pole!"
+ok
+Trying:
+    decode_message('K1fG0! - cfq1D')
+Expecting:
+    'Aloha! - World'
+ok
+Trying:
+    encode_message('Hello World')
+Expecting:
+    'nw11f cfq1D'
+ok
+Trying:
+    encode_message('An old silent pond..., A frog jumps into the pond—')
+Expecting:
+    'KQ f1D gz1wQb NfQD..., K Iqfr YZ7Ng zQbf bGw NfQD—'
+ok
+Trying:
+    encode_message("Santa's elevs at north pole!")
+Expecting:
+    "M0Qb0'g w1wHg 0b QfqbG Nf1w!"
+ok
+1 items had no tests:
+    __main__
+2 items passed all tests:
+   2 tests in __main__.decode_message
+   3 tests in __main__.encode_message
+5 tests in 3 items.
+5 passed and 0 failed.
+Test passed.

@@ -10,8 +10,6 @@ This will be the main function for the program.
 
 from secretagent import showAgentMessages, load_agent_messages
 from handler import handler_prompts
-# import argparse
-# import sys
 
 WELCOME_PROMPT = """WELCOME TO THE SECRET AGENT MESSAGE PORTAL!"""
 END_PROMPT = """Thank for using the secret agent message portal! Goodbye!"""
@@ -26,7 +24,6 @@ def main():
     while True:
         # get user input
         cmd = input(VERIFY_USER).casefold().strip()
-        print(cmd)
         # if user is an agent
         if cmd == "yes" or cmd == "y": 
             # messages variable assigned to parsing function
